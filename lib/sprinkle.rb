@@ -3,7 +3,7 @@ require 'active_support'
 require 'active_support/dependencies'
 
 # Use active supports auto load mechanism
-ActiveSupport::Dependencies.autoload_paths << File.dirname(__FILE__)
+ActiveSupport::Dependencies.load_paths << File.dirname(__FILE__)
 
 # Configure active support to log auto-loading of dependencies
 #ActiveSupport::Dependencies::RAILS_DEFAULT_LOGGER = Logger.new($stdout)
